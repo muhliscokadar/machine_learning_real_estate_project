@@ -105,6 +105,3 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-# Node project dependencies and settings
-node_modules/
