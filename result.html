@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTC-8">
+    <title>Wind Speed Page</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Files/data.html">Data</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="ML_problem.html">Mapping ML Problem</a></li>
+                                <li><a href="correlations.html">Correlations</a></li>
+                                <li><a href="feature.html">Feature Engineering</a></li>
+                            <li><a href="result.html">Results</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    </nav>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-12">
+                    <h1>Comparing Models</h1>
+                    <img src="images/Result.png" float: left width="500px" height="200px">
+                    
+                    <br> <br>
+                    From the above table, RMSE, R-squared, MAE for Rendom Forest Regressor is better(i.e RMSE and MAE is least and R-squared is more) than other models so Random Forest is the winning Model.
+                    <br>
+                    This models dataset does not consist, US annual inflation index, return on S&P Composite Index, and US treasury 1 year Bond return.
+                    <br><br><br>
+
+                     
+                    <img src="images/result_after.png" float: left width="500px" height="200px">
+                    <br><br>
+                    After we added US annual inflation index, return on S&P Composite Index, and US treasury 1 year Bond return to our dataset we got those resuts above.
+                    <br>
+                    From the above table, RMSE, R-squared, MAE for Xgboost Regressor is better(i.e RMSE and MAE is least and R-squared is more) than other models so Xgboost is the winning Model.
+                    <br> 
+                    As you can see the difference almost every models results are better then before. 
+                
+                </div>
+                <div class="col-md-4 sidebar">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1></h1>
+                            <br><br><br>
+
+                            
+                        </div>
+                    </div>
+                       
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</body>
+<html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTC-8">
+    <title>Mapping ML Problem</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Files/data.html">Data</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ML_problem.html">Mapping ML Problem</a></li>
+                            <li><a href="correlations.html">Correlations</a></li>
+                            <li><a href="feature.html">Feature Engineering</a></li>
+                            <li><a href="result.html">Results</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <h1>Type of Machine Learning Problem</h1>
+                
+                <br> <br>
+
+                It is a regression problem, given the set of features, we had to predict the transaction price of the house.
+
+                <br> <br> 
+                Performance Metric (KPI) <br>
+                
+                Since it is a regression problem, we used the following regression metrics:
+
+                <br><br>
+                - Root Mean Squared Error (RMSE)<br>- R-squared<br>- Mean Absolute Error (MAE)
+                <br><br>
+                * Our win-condition for this project was predict within $70,000 of true transaction prices, on average.
+                <br>
+                * Mean absolute error (or MAE) was the average absolute difference between predicted and actual values for our target variable. That exactly aligns with the terms of our win condition!
+                <br>
+                * So we aimed to get MAE below 70,000.
+            </div>
+            <div class="col-md-4 sidebar">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1></h1>
+                        <img src="images/rmse.gif" float: left width="250px" height="150px">
+                        
+                        <img src="images/r_squared.png" float: left width="250px" height="150px">
+                        <img src="images/mae.png" float: left width="250px" height="150px">
+                    </div>
+                </div>
+                <div class="row">
+
+                   
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</body>
+<html>

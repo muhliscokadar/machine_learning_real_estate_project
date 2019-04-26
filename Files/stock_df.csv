@@ -1,4 +1,4 @@
-tx_price,beds,baths,sqft,year_built,lot_size,property_type,exterior_walls,roof,basement,restaurants,groceries,nightlife,cafes,shopping,arts_entertainment,beauty_spas,active_life,median_age,married,college_grad,property_tax,insurance,median_school,num_schools,tx_year,sprtrn,cpiret,b1ret
+tx_price,beds,baths,sqft,year_built,lot_size,property_type,exterior_walls,roof,basement,restaurants,groceries,nightlife,cafes,shopping,arts_entertainment,beauty_spas,active_life,median_age,married,college_grad,property_tax,insurance,median_school,num_schools,tx_year,s&p_returns,consumer_price_index,treasury_1_year_bond
 295850,1,1,584,2013,0,Apartment / Condo / Townhouse,Wood Siding,Missing,0.0,107,9,30,19,89,6,47,58,33.0,65.0,84.0,234.0,81.0,9.0,3.0,2013,0.022120666666666667,0.015018,0.003387
 240000,1,1,660,1983,0,Apartment / Condo / Townhouse,Brick,Missing,0.0,51,8,6,2,40,18,32,41,36.0,49.0,77.0,188.0,65.0,6.0,3.0,2013,0.022120666666666667,0.015018,0.003387
 238600,1,1,834,1992,0,Apartment / Condo / Townhouse,Brick,Missing,0.0,45,12,9,11,28,7,33,20,43.0,32.0,66.0,185.0,61.0,2.0,3.0,2013,0.022120666666666667,0.015018,0.003387
