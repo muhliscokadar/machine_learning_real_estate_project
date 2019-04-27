@@ -39,12 +39,12 @@
                     <li><a href="Files/data.html" target="_blank">Data</a></li>
                          <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false">Plots <span class="caret"></span></a>
+                            aria-expanded="false">Processes <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="ML_problem.html" target="_blank">Mapping ML Problem</a></li>
                             <li><a href="correlations.html" target="_blank">Correlations</a></li>
                             <li><a href="feature.html" target="_blank">Feature Engineering</a></li>
-                            <li><a href="result.html">Results</a></li>
+                            <li><a href="result.html" target="_blank">Results</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -55,19 +55,75 @@
             <div class="col-md-1"></div>
             <div class="col-md-12">
                 <h1>Relationship Between Stock Market & Real Estate Prices</h1>
-                <img src="images/sp500.jpg" float: left width="200px" height="150px">
                 <img src="images/REIT.jpg" float: left width="200px" height="150px">
+                <img src="images/sp500.jpg" float: left width="200px" height="150px">
+                
                 <img src="images/cpi.jpg" float: left width="200px" height="150px">
                 <img src="images/bond.jpg" float: left width="250px" height="150px">
                 <br> <br>
 
-                The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-                To accomplish this analysis, I first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                The purpose of this project was build real-esate pricing model with a dataset which we gathered from Real Estate Investment Trust (REIT).
+                And, we combined our dataset with US annual inflation index, return on S&P Composite Index, and US treasury 1 year Bond return in order to predict real-estate prices better. 
+                Our goal was build a model to predict transaction prices with an average error of under US Dollars 70,000.
 
-                <br> <br> <br>
-                After assembling the dataset, I used Matplotlip to plot various aspects of the weather vs. latitude. Factors I looked 
-                at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualitions created
-                as part of analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                <br> <br> 
+                <h3>Data Overview</h3>
+                <br>
+                1. The dataset has 1883 observations in the Travis County (Austin, TX) between 1993 and 2016.
+                <br>
+                2. Each observation is for the transaction of one property only.
+                <br>
+                3. Each transaction is between $200,000 and $800,000.
+                <br>
+                <h4>Target Variable</h4>
+                - 'tx_price' - Transaction price in USD
+                <br>
+                <h4>Features of the data:</h4>
+                <br>
+
+                <h5>Public records:</h5>
+                <br>
+                - 'tx_year' - Year the transaction took place
+                <br>
+                - 'property_tax' - Monthly property tax<br>
+                - 'insurance' - Cost of monthly homeowner's insurance<br>
+
+                <h5>Property characteristics:</h5>
+                <br>
+                - 'beds' - Number of bedrooms<br>
+                - 'baths' - Number of bathrooms<br>
+                - 'sqft' - Total floor area in squared feet<br>
+                - 'lot_size' - Total outside area in squared feet<br>
+                - 'year_built' - Year property was built<br>
+                - 'active_life' - Number of gyms, yoga studios, and sports venues within 1 mile<br>
+                - 'basement' - Does the property have a basement?<br>
+                - 'exterior_walls' - The material used for constructing walls of the house<br>
+                - 'roof' - The material used for constructing the roof<br>
+
+                <h5>Location convenience scores:</h5><br>
+                - 'restaurants' - Number of restaurants within 1 mile<br>
+                - 'groceries' - Number of grocery stores within 1 mile<br>
+                - 'nightlife' - Number of nightlife venues within 1 mile<br>
+                - 'cafes' - Number of cafes within 1 mile<br>
+                - 'shopping' - Number of stores within 1 mile<br>
+                - 'arts_entertainment' - Number of arts and entertainment venues within 1 mile<br>
+                - 'beauty_spas' - Number of beauty and spa locations within 1 mile<br>
+                - 'active_life' - Number of gyms, yoga studios, and sports venues within 1 mile<br>
+
+                <h5>Neighborhood demographics:</h5><br>
+                - 'median_age' - Median age of the neighborhood<br>
+                - 'married' - Percent of neighborhood who are married<br>
+                - 'college_grad' - Percent of neighborhood who graduated college<br>
+
+                <h5>Schools:</h5><br>
+                - 'num_schools' - Number of public schools within district<br>
+                - 'median_school' - Median score of the public schools within district, on the range 1 - 10 <br>
+
+                <h5>Economic Variables</h5><br>
+                - 's&p_returns' - S&P Composite Index <br>
+                - 'consumer_price_index' - US annual inflation index <br>
+                - 'treasury_1_year_bond' - US treasury 1 year Bond return<br><br>
+
 
             </div>
             <!-- <div class="col-md-4 sidebar">
